@@ -1,0 +1,204 @@
+db.politicos.insertOne(
+{
+	_id: 'pol01',
+	nombre: 'Paco',
+	apellidos: 'Butxaca',
+	reunión:[
+	{
+		idpolitico: 'pol01',
+		reunión: 'PLE001',
+		dieta: 'Desplazamiento',
+		cobro: 50
+	},
+	{
+		idpolitico: 'pol01',
+		reunión: 'PLE001',
+		dieta: 'Plus',
+		cobro: 100
+	},
+	{
+		idpolitico: 'pol01',
+		reunión: 'COM001',
+		dieta: 'Productividad',
+		cobro: 500
+	},
+	{
+		idpolitico: 'pol01',
+		reunión: 'COM001',
+		dieta: 'Silla',
+		cobro: 100
+	}],
+	chanchullos: 8
+}
+)
+
+db.politicos.insertOne(
+{
+	_id: 'pol02',
+	nombre: 'Pepe',
+	apellidos: 'Meloquedo',
+	reunión:[
+	{
+		idpolitico: 'pol02',
+		reunión: 'PLE001',
+		dieta: 'Desplazamiento',
+		cobro: 400
+	},
+	{
+		idpolitico: 'pol02',
+		reunión: 'PLE001',
+		dieta: 'Plus',
+		cobro: 100
+	},
+	{
+		idpolitico: 'pol02',
+		reunión: 'COM001',
+		dieta: 'Productividad',
+		cobro: 400
+	},
+	{
+		idpolitico: 'pol02',
+		reunión: 'COM001',
+		dieta: 'Silla',
+		cobro: 100
+	}],
+	chanchullos: 4
+}
+)
+
+db.politicos.insertOne(
+{
+	_id: 'pol03',
+	nombre: 'Armando',
+	apellidos: 'Nopuedo',
+	reunión:[
+	{
+		idpolitico: 'pol03',
+		reunión: 'PLE001',
+		dieta: 'Desplazamiento',
+		cobro: 300
+	},
+	{
+		idpolitico: 'pol03',
+		reunión: 'COM001',
+		dieta: 'Productividad',
+		cobro: 300
+	},
+	{
+		idpolitico: 'pol03',
+		reunión: 'COM001',
+		dieta: 'Silla',
+		cobro: 100
+	},
+	{
+		idpolitico: 'pol03',
+		reunión: 'COM002',
+		dieta: 'Desplazamiento',
+		cobro: 300
+	},
+	{
+		idpolitico: 'pol03',
+		reunión: 'COM002',
+		dieta: 'Silla',
+		cobro: 100
+	}]
+}
+)
+
+db.politicos.insertOne(
+{
+	_id: 'pol04',
+	nombre: 'Wifredo',
+	apellidos: 'Mango',
+	reunión:[
+	{
+		idpolitico: 'pol04',
+		reunión: 'PLE001',
+		dieta: 'Desplazamiento',
+		cobro: 300
+	},
+	{
+		idpolitico: 'pol04',
+		reunión: 'COM001',
+		dieta: 'Productividad',
+		cobro: 300
+	},
+	{
+		idpolitico: 'pol04',
+		reunión: 'COM001',
+		dieta: 'Silla',
+		cobro: 100
+	},
+	{
+		idpolitico: 'pol04',
+		reunión: 'COM002',
+		dieta: 'Desplazamiento',
+		cobro: 350
+	},
+	{
+		idpolitico: 'pol04',
+		reunión: 'COM002',
+		dieta: 'Silla',
+		cobro: 100
+	}]
+	chanchullos: 5
+}
+)
+
+db.politicos.insertOne(
+{
+	_id: 'pol05',
+	nombre: 'Anastasio',
+	apellidos: 'Caradura',
+	reunión:[
+	{
+		idpolitico: 'pol05',
+		reunión: 'PLE001',
+		dieta: 'Desplazamiento',
+		cobro: 350
+	},
+	{
+		idpolitico: 'pol05',
+		reunión: 'PLE001',
+		dieta: 'Plus',
+		cobro: 100
+	},
+	{
+		idpolitico: 'pol05',
+		reunión: 'COM001',
+		dieta: 'Productividad',
+		cobro: 350
+	},
+	{
+		idpolitico: 'pol05',
+		reunión: 'COM001',
+		dieta: 'Silla',
+		cobro: 100
+	},
+	{
+		idpolitico: 'pol05',
+		reunión: 'COM002',
+		dieta: 'Desplazamiento',
+		cobro: 350
+	},
+	{
+		idpolitico: 'pol05',
+		reunión: 'COM002',
+		dieta: 'Silla',
+		cobro: 100
+	}]
+	chanchullos: 2
+}
+)
+
+db.politicos.insertOne(
+{
+	_id: 'pol06',
+	nombre: 'Jaime',
+	apellidos: 'Muylegal',
+	chanchullos: 0
+}
+)
+
+var sorted = {apellidos:1, nombre:1}
+db.politicos.find().sort(sorted)
